@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: '#';
+    
+}
+/*task bar*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 5%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+/* background color */
+body{
+    background-color: #f3ffa9;
+}
+.logo{
+    
+    color: rgb(255, 0, 0);
+    user-select: none;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px ;
+}
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    width: 100%;
+    height: 10%;
+    background: rgb(255, 221, 0);
+    border-radius: 10%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+/*mode */
+.dn{
+    float: inline-end;
+    padding-top: 10%;
+    color: rgb(255, 248, 203);
+    z-index: +10;
+}
+.dna{
+    z-index: +3;
+}
+input[type="checkbox"]
+{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check
+{
+    background: #fff;
+    box-shadow: 0 0 0 1500px #092c3e;
+}
+.check::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check::before
+{
+    transform: translateX(-50px);
+}
+
+
+.check::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #092c3e;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+    z-index: +2;
+}
+input[type="checkbox"]:checked ~ .check::after
+{
+    transform: translateX(0px);
+}
+.text{
+    content: '';
+}
+/* main text */
+main{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    
+}
+
+.name{
+    z-index: +3;
+}
+
+web{
+    width: 100%;
+    height: 1h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #83cee0; 
+}
+.weeb{
+    z-index: +3;
+}
+paragraph{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+paragrapher{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.fronte{
+    font-size: 20px;
+    z-index: +3;
+}
+paragraphers{
+    width: 100%;
+    height: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.fronter{
+    z-index: +3;
+}
